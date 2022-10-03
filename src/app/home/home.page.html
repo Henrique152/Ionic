@@ -20,21 +20,7 @@
     <p>Texto de teste para <span appHighlight [cor]="cor">mostrar o marcador</span> em funcionamento</p>
     <strong [ngStyle]="estilo">Pronto para criar um app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-
-    <div *ngFor="let cor of cores; let i=index; let isFirst = first; let isLast = last; let isOdd=odd; let isEven = even ">
-      {{cor}} {{i}} {{isFirst}} {{isLast}} {{isOdd}} {{isEven}}
     </div>
-
-    <div *ngIf="mostrarInfo">
-      <p>informações adicionais bla bla bla</p>
-    </div>
-
-    <div [hidden]="!mostrarInfo">
-      <p>informações adicionais bla bla bla</p>
-    </div>
-
-    <ion-button *ngFor="let cor of cores; let i=index" (click)="mudarCor(cor)">
-      Mudar cor para {{cor}}
     </ion-button>
 
     <app-titulo></app-titulo>
@@ -48,10 +34,6 @@
 
 
     <!--
-    <ion-button (click)="cliqueAqui()">Clique aqui</ion-button>
-    <ion-button (click)="mudarCor('blue')">Azul</ion-button>
-    <ion-button (click)="mudarCor('red')">Vermelho</ion-button>
-    <ion-button (click)="mudarCor('yellow')">amarelo</ion-button>
     -->
   </div>
 </ion-content>
